@@ -1,0 +1,85 @@
+.add-analysis {
+    &__label {
+        cursor: pointer;
+        display: block;
+        transition: transform 0.2s ease; // Плавный переход для фона
+        @media (max-width: 600px) {
+            font-size: 16px;
+        }
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    &__input-container {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__file-upload {
+        margin-top: 56px;
+        position: relative;
+        display: none;
+        overflow: hidden;
+        flex: 100%;
+        cursor: pointer;
+
+        img {
+            margin-right: 10px;
+        }
+        &.has-file-analysis {
+            display: inline-block;
+            @media (max-width: 955px) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__file-input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+    &__file-label {
+        display: inline-block;
+
+        color: rgb(150, 150, 150);
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    &__group-label {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__checkbox-pair {
+        display: flex;
+        @media (max-width: 600px) {
+            max-width: 350px;
+        }
+    }
+    &__input {
+        margin-right: 90px;
+        @media (max-width: 1040px) {
+            margin-right: 50px;
+        }
+    }
+    &__checkbox-pair_down {
+        @media (max-width: 955px) {
+            order: 2;
+        }
+    }
+}

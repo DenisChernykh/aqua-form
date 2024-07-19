@@ -1,0 +1,42 @@
+.enter-analysis__input-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    row-gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.enter-analysis__label {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    margin: 0;
+    padding: 0;
+}
+
+.enter-analysis__input {
+    width: 100%;
+    margin-right: 0;
+    font-size: 16px;
+}
+
+.enter-analysis__text {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 13px;
+}
+
+.enter-analysis__title {
+    margin-bottom: 54px;
+}

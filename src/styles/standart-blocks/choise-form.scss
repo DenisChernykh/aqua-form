@@ -1,0 +1,86 @@
+.choise-form {
+    display: flex;
+    flex-direction: column;
+    min-height: 402px;
+    box-sizing: border-box;
+    border: 5px solid rgb(173, 228, 173);
+    border-radius: 20px;
+    padding-bottom: 22px;
+    background: rgb(255, 255, 255);
+    padding-top: 48px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    // .water-usage__title
+
+    &__title {
+        margin-bottom: 80px;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    // .water-usage__label
+
+    &__label {
+        display: flex;
+        align-items: center;
+        margin-right: 22px;
+        font-size: 24px;
+    }
+
+    // .water-usage__text
+
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__input {
+        outline: none;
+        box-sizing: border-box;
+        border: 1px solid rgb(150, 150, 150);
+        border-radius: 5px;
+        padding: 10px 10px; // Сокращение для вертикального и горизонтального отступов
+        transition: transform 0.2s ease;
+        margin: 0;
+        width: 28px;
+        height: 28px;
+
+        // Отступ между инпутами
+
+        &:focus {
+            border-color: #007bff;
+        }
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    &__input:first-of-type + &__label {
+        margin-left: 90px; // Замените на нужное значение
+    }
+
+    &__input-container {
+        display: flex;
+        flex-grow: 1;
+    }
+    &__list {
+        width: 100px;
+        height: 28px;
+        align-self: flex-end;
+        border-radius: 5px;
+        border: 1px solid rgb(150, 150, 150);
+    }
+}

@@ -1,0 +1,22 @@
+.analysis {
+    &__label {
+        cursor: pointer;
+        transition: transform 0.2s ease; // Плавный переход для фона
+        font-size: 24px;
+    }
+    &__input-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    &__group-radio {
+        display: flex;
+    }
+&__checkbox-pair {
+    display: flex;
+
+}
+&__input {
+    margin-right: 95px;
+}
+}

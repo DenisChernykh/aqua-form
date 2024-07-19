@@ -1,0 +1,120 @@
+.button-next,
+.button-prev {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    // Эффект нажатия
+    &:active {
+        transform: scale(0.95); // Уменьшение кнопки при нажатии
+    }
+
+    span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+        color: white;
+        font-size: 16px; // Размер текста
+        font-weight: 600; // Жирный текст
+    }
+    &__arrow {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.button-prev {
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s;
+
+    &__figure {
+        svg {
+            path {
+                fill: rgba(141, 53, 115, 0.778);
+                transition: fill 0.3s;
+            }
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translateX(-50%) rotate(180deg);
+
+        svg {
+            path {
+                fill: #ffffff;
+                transition: fill 0.3s;
+            }
+        }
+    }
+
+    &:hover &__figure svg path {
+        fill: #9d5656;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.button-next {
+    &__arrow {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+
+        svg {
+            path {
+                fill: #ffffff;
+                transition: fill 0.3s;
+            }
+        }
+    }
+
+    &:hover &__figure svg path {
+        fill: #2b13dd;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.button-prev {
+    &.disabled {
+        cursor: not-allowed;
+
+        // Применение стилей к элементу __figure, когда кнопка отключена
+        &__figure {
+            svg {
+                path {
+                    fill: gray; // Изменение цвета фигуры
+                    // Добавьте другие стили, если необходимо
+                }
+            }
+        }
+    }
+}
+
+.button-prev.disabled .button-prev__figure svg path {
+    opacity: 0.8;
+    fill: gray; // Цвет для фигуры при отключении
+}
+.button-next.disabled .button-next__figure svg path {
+    opacity: 0.8;
+    fill: gray; // Цвет для фигуры при отключении
+}

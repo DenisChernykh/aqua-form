@@ -1,0 +1,81 @@
+.water-usage {
+    min-height: 402px;
+    box-sizing: border-box;
+    border: 5px solid rgb(173, 228, 173);
+    border-radius: 20px;
+
+    background: rgb(255, 255, 255);
+    padding-top: 48px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    // .water-usage__title
+
+    &__title {
+        margin-bottom: 112px;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    // .water-usage__label
+
+    &__label {
+        display: flex;
+        align-items: center;
+
+        font-size: 20px;
+    }
+
+    // .water-usage__text
+
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-right: 83px;
+    }
+
+    // .water-usage__input
+
+    &__input {
+        max-width: 475px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid rgb(150, 150, 150);
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        will-change: transform;
+        &:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__input-container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        position: relative;
+        align-items: center;
+        @media (max-width:800px) {
+            grid-template-columns: auto;
+
+        }
+    }
+}

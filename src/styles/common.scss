@@ -1,0 +1,89 @@
+.page {
+    display: none;
+    &.test {
+        display: block;
+    }
+}
+.active {
+    display: flex;
+}
+
+.choise-form__input-container .error-message {
+    display: none;
+}
+.analysis__group-radio .error-message {
+    display: none;
+}
+
+.form__input-container .error-message {
+    display: none;
+}
+.enter-analysis__input-container .error-message {
+    display: none;
+}
+
+/* Error Styling */
+
+.error-message {
+    color: #cc0033;
+    display: inline-block;
+    line-height: 15px;
+    margin: 5px 0 0;
+    grid-column: 2;
+}
+
+.error label[type='text'] {
+    color: #cc0033;
+}
+
+.error input[type='text'] {
+    background-color: #fce4e4;
+    border: 1px solid #cc0033;
+    outline: none;
+}
+
+.enter-analysis__text.error {
+    color: #cc0033;
+}
+
+.enter-analysis__input.error {
+    background-color: #fce4e4;
+    border: 1px solid #cc0033;
+    outline: none;
+}
+
+.error .error-message {
+    display: inline-block;
+}
+
+.form__input-container.error .error-message {
+    flex: 100%;
+}
+.add-analysis__input-container.error .error-message {
+    flex: 100%;
+}
+.enter-analysis__input-container.error .error-message {
+    flex: 100%;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(-2px);
+    }
+    50% {
+        transform: translate(2px);
+    }
+    75% {
+        transform: translate(-2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.shake {
+    animation: shake 0.5s;
+}

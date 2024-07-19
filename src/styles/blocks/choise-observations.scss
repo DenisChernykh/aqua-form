@@ -1,0 +1,56 @@
+.choise-observations {
+    // .choise-analysis__title
+
+    &__title {
+    }
+
+    // .choise-analysis__input-container
+
+    &__input-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+        column-gap: 76px; /* Промежуток между блоками */
+        row-gap: 30px;
+        margin-bottom: 20px;
+        @media (max-width: 900px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__input-pair {
+        display: flex;
+        flex-direction: column; // Вертикальное расположение label и select
+    }
+
+    // .choise-analysis__list
+
+    &__list {
+        max-width: 447px;
+        width: 100%;
+        height: 42px;
+        padding-left: 13px;
+        padding-right: 20px;
+        @media (max-width: 900px) {
+            max-width: none;;
+        }
+    }
+
+    &__label {
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: start;
+        margin-bottom: 13px;
+        @media (max-width: 900px) {
+            font-size: 18px;
+        }
+    }
+
+    // .choise-analysis__text
+
+    &__text {
+        margin-bottom: 13px;
+    }
+}
